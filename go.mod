@@ -1,6 +1,6 @@
 module github.com/iiiusky/alicloud-tools
 
-go 1.14
+go 1.21.0
 
 require (
 	github.com/aliyun/alibaba-cloud-sdk-go v1.61.602
