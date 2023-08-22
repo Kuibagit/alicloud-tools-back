@@ -21,6 +21,6 @@ import (
 )
 
 func main() {
-	common.APPVersion = "1.0.5"
+	common.APPVersion = "1.0.6"
 	cmd.Execute()
 }
