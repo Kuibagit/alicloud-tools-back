@@ -1,6 +1,7 @@
 name: Release Go Binary
 on:
-  workflow_dispatch:
+  release:
+    types: [created]
 jobs:
   releases-matrix:
     name: Release Go Binary
@@ -16,6 +17,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
-        goversion: "https://golang.org/dl/go1.15.3.linux-amd64.tar.gz"
+        goversion: "https://golang.org/dl/go1.21.0.linux-amd64.tar.gz"
         binary_name: "AliCloud-Tools"
         extra_files: README.MD
