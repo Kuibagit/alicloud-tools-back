@@ -1,7 +1,6 @@
 name: Release Go Binary
 on:
-  release:
-    types: [created]
+  workflow_dispatch:
 jobs:
   releases-matrix:
     name: Release Go Binary
